@@ -52,9 +52,13 @@ class Video(Resource):
         del videos[video_id]
         return '', 204
 
+class Welcome(Resource):
+    def get(self):
+        return {"data":"Welcome to RestAPI"}
 
 
 api.add_resource(Video, "/video/<int:video_id>")
+api.add_resource(Welcome, "/welcome")
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000, debug=True, threaded=True)

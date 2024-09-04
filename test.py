@@ -1,6 +1,6 @@
 import requests
 
-BASE = "http://54.254.162.138:5000/"
+BASE = "https://techwithtim.onrender.com:10000/"
 
 # response = requests.get(BASE + "hi/ace")
 # response = requests.put(BASE + "hi/ace", {"likes": 10})
